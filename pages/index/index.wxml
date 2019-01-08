@@ -1,13 +1,18 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+ <view class="weui-panel">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text nopadding">
+                <view class="weui-flex">
+            <view class="weui-flex__item"><image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=967086807,3884585067&fm=27&gp=0.jpg" class="headerView"/></view>
+                </view>
+                    <view class="weui-media-box__desc">你猜我吃了什么</view>
+                      <view class="weui-flex">
+                      <view class="weui-flex__item"><view class="placeholder">weui</view></view>
+                      <view class="weui-flex__item"><view class="placeholder">weui</view></view>
+                     <view class="weui-flex__item"><view class="placeholder">weui</view></view>
+                  </view>
+                </view>
+            </view>
+        </view>
 </view>

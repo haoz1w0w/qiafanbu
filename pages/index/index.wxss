@@ -19,3 +19,27 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.user{
+  background-color:white; 
+}
+.placeholder{
+    margin: 5px;
+    text-align: center;
+    background-color: #EBEBEB;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #cfcfcf;
+} 
+.shangceng{
+  margin-top:20px;
+}
+.nopadding{
+  padding-bottom: 0px;
+}
+.headerView{
+   height: 50px;
+    width: 50px;
+    border-radius: 25px;
+
+}
