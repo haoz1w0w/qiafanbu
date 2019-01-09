@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/add/add"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,12 +13,22 @@
   "tabBar": {
     "list": [
       {
+        "selectedIconPath": "images/首页.png",
         "pagePath": "pages/index/index",
+        "iconPath": "images/首页.png",
         "text": "首页"
       },
       {
+        "selectedIconPath": "images/编辑.png",
+        "pagePath": "pages/add/add",
+        "iconPath": "images/编辑.png",
+        "text": "添加"
+      },
+      {
+        "selectedIconPath": "images/我的.png",
         "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "iconPath": "images/我的.png",
+        "text": "我的"
       }
     ]
   },
@@ -25,5 +36,5 @@
     "request": 10000,
     "downloadFile": 10000
   },
-  "debug":true
+  "debug": true
 }

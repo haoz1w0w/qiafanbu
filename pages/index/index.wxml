@@ -1,18 +1,36 @@
 <!--index.wxml-->
 <view class="container">
- <view class="weui-panel">
-            <view class="weui-panel__bd">
-                <view class="weui-media-box weui-media-box_text nopadding">
-                <view class="weui-flex">
-            <view class="weui-flex__item"><image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=967086807,3884585067&fm=27&gp=0.jpg" class="headerView"/></view>
-                </view>
-                    <view class="weui-media-box__desc">你猜我吃了什么</view>
-                      <view class="weui-flex">
-                      <view class="weui-flex__item"><view class="placeholder">weui</view></view>
-                      <view class="weui-flex__item"><view class="placeholder">weui</view></view>
-                     <view class="weui-flex__item"><view class="placeholder">weui</view></view>
-                  </view>
-                </view>
+
+  <view class="page_bd" wx:for="{{list}}" wx:for-item="content">
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__bd">
+        <navigator url="" class="weui-media-box weui-media-box_appmsg nopadding" hover-class="weui-cell_active">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb headerView" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=967086807,3884585067&fm=27&gp=0.jpg" />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">{{content.name}}</view>
+            <view class="weui-media-box__desc">{{content.desc}}</view>
+          </view>
+        </navigator>
+        <view class="weui-panel__bd">
+          <view class="weui-media-box weui-media-box_text nopaddingright">
+            <view class="weui-media-box__desc paddingbottomimg paddingright15">{{content.text}}</view>
+            <view class="weui-flex" style='padding-right:0px' wx:if="{{content.ifImg}}">
+              <view class="weui-flex__item">
+                <image class="weui-media-box__thumb imgSize" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=967086807,3884585067&fm=27&gp=0.jpg" />
+              </view>
+              <view class="weui-flex__item">
+                <image class="weui-media-box__thumb imgSize" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=967086807,3884585067&fm=27&gp=0.jpg" />
+              </view>
+              <view class="weui-flex__item">
+                <image class="weui-media-box__thumb imgSize" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=967086807,3884585067&fm=27&gp=0.jpg" />
+              </view>
             </view>
+          </view>
         </view>
+      </view>
+    </view>
+    
+  </view>
 </view>
